@@ -1,0 +1,19 @@
+import socket
+import json
+
+# Local UDP telemetry listener configuration for Forza Horizon 6
+TCP_IP = "127.0.0.1"
+PORT = 53000
+
+def parse_telemetry():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    sock.bind((TCP_IP, PORT))
+    print(f"Listening for Forza Horizon 6 telemetry on port {PORT}...")
+    
+    while True:
+        data, addr = sock.recvfrom(1024)
+        # Parse incoming packet (Speed, RPM, Acceleration, Collision Force)
+        # Trigger Pal co-driver elemental attack state when thresholds are met
+        
+if __name__ == "__main__":
+    parse_telemetry()

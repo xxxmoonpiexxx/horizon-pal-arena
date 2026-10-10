@@ -1,0 +1,13 @@
+{
+  "mapping_version": "1.0.0",
+  "triggers": {
+    "drift_angle_threshold": 25.0,
+    "pal_action": "Ignis_Blast",
+    "co_driver_commentary": "Hold the line! Unleashing firestorm through the apex!"
+  },
+  "impact_defense": {
+    "collision_g_force": 4.5,
+    "pal_action": "Hydro_Shield",
+    "co_driver_commentary": "Brace for impact! Summoning barrier!"
+  }
+}

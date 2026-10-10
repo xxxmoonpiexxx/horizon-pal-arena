@@ -1,0 +1,24 @@
+{
+  "name": "Horizon Pal Arena",
+  "version": "1.0.0",
+  "description": "Drive high-speed racing telemetry directly into Palworld co-driver elemental abilities and boss arena challenges.",
+  "games": {
+    "primary": "palworld",
+    "companion": "custom-forza-horizon-6"
+  },
+  "launch": {
+    "kind": "game"
+  },
+  "install": [
+    {
+      "source": "overlay/",
+      "destination": "{game:custom-forza-horizon-6}/Content/",
+      "mode": "installed"
+    },
+    {
+      "source": "sheets/",
+      "destination": "{game:palworld}/Content/Pal/Data/",
+      "mode": "installed"
+    }
+  ]
+}
